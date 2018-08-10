@@ -91,7 +91,6 @@ services:
     volumes:
       - ./letsencrypt:/etc/letsencrypt
     command: certonly -n --agree-tos --email snupt@snupt.com --dns-route53 -d mail.snupt.com
-    environment:
     env_file: .secrets
 
   letsencrypt-renew:
